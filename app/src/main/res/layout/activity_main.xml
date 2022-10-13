@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/heads" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnHeads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fej" />
+
+                <Button
+                    android:id="@+id/btnTails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Írás" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/flips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dobások: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/winTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Győzelem: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/loseTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vereség: "
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
